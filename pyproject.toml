@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "option-pricing"
+version = "0.1.0"
+description = "Option pricing models for European and American options with dividends."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "H. Maur" }
+]
+dependencies = [
+  "numpy>=1.24"
+]
+
+[project.optional-dependencies]
+dev = [
+  "matplotlib>=3.8",
+  "pytest>=8.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
