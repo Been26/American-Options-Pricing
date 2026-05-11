@@ -1,4 +1,4 @@
-# Option Pricing
+# Vanilla Equity Options Pricing
 
 Python pricers for vanilla equity options, with support for European and American exercise and dividends.
 
@@ -8,7 +8,7 @@ Implemented methods:
 - Cox-Ross-Rubinstein binomial tree for European and American options.
 - Longstaff-Schwartz Monte Carlo for American options.
 
-The code is intentionally small and readable, so the repository can be used both as a pricing library and as a learning project.
+The code is intentionally small and readable, so the repository can be used both as a pricing library and as a learning project (essentially).
 
 ## Quick Start
 
@@ -235,26 +235,6 @@ It includes:
 - LSMC convergence plots with standard errors.
 - Discrete dividend examples.
 
-## Development
-
-Install the project in editable mode:
-
-```powershell
-python -m pip install -e ".[dev]"
-```
-
-Run the tests:
-
-```powershell
-python -m pytest
-```
-
-Launch the notebook:
-
-```powershell
-jupyter notebook
-```
-
 ## Notes
 
-The implementations are educational and transparent. They are suitable for experimentation, comparison of methods, and extension. They are not yet a production-grade risk engine: there are no Greeks, calibration routines, yield curves, volatility surfaces, business-day calendars, or market data adapters.
+.....
